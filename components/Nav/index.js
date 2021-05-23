@@ -4,7 +4,8 @@ import styled from "styled-components";
 const Wrapper = styled.nav`
   padding: 15px;
   border-bottom: 1px solid #ddd;
-
+  position: fixed;
+  width: 100%;
   background: #98fb98;
   text-align: center;
   margin: 0 auto;
@@ -25,10 +26,13 @@ const Nav = () => (
     <Link href="/">
       <a>Home</a>
     </Link>{" "}
-    <Link href="/about" prefetch>
+    <Link href="#about" prefetch>
       <a>About</a>
     </Link>{" "}
-    <Link href="/contact" prefetch>
+    <Link href="#portofolio" prefetch>
+      <a>Portofolio</a>
+    </Link>{" "}
+    <Link href="#contact" prefetch>
       <a>Contact</a>
     </Link>
   </Wrapper>
