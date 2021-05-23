@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
-export default ({ children, title = "JogjaJS Blog" }) => (
+export default ({ children, title = "nawan44" }) => (
   <Wrapper>
     <Head>
       <title>{title}</title>
@@ -16,6 +16,6 @@ export default ({ children, title = "JogjaJS Blog" }) => (
 
     <main>{children}</main>
 
-    <Footer>Made with love from Jogja</Footer>
+    <Footer>nawan44</Footer>
   </Wrapper>
 );

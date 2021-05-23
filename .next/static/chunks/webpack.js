@@ -162,7 +162,7 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "static/chunks/" + chunkId + ".js";
+/******/ 			return "static/chunks/fallback/" + chunkId + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	
@@ -182,7 +182,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "0a387c8e0d8c0ab00154"; }
+/******/ 		__webpack_require__.h = function() { return "9611c8a2b449a9521f0a"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -670,7 +670,7 @@
 /******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl + "../../";
+/******/ 		__webpack_require__.p = scriptUrl + "../../../";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/react refresh */
