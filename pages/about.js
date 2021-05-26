@@ -145,6 +145,13 @@ export default function About() {
         lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer
         quam nunc, consequat
       </p>
+      <br />
+      <div class="space-y-4">
+        <span class="block">1</span>
+        <span class="block">2</span>
+        <span class="block">3</span>
+      </div>
+      <br />
     </div>
   );
 }

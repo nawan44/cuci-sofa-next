@@ -1,15 +1,17 @@
 import Document, { html, Head, Main, NextScript } from "next/document";
-import { ServerStyleSheet } from "styled-components";
+// import { ServerStyleSheet } from "styled-components";
+import "../styles/global-styles.js";
+// import "../styles/globals.css";
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    const sheet = new ServerStyleSheet();
-    const page = renderPage(
-      (App) => (props) => sheet.collectStyles(<App {...props} />)
-    );
-    const styleTags = sheet.getStyleElement();
-    return { ...page, styleTags };
-  }
+  // static getInitialProps({ renderPage }) {
+  //   const sheet = new ServerStyleSheet();
+  //   const page = renderPage(
+  //     (App) => (props) => sheet.collectStyles(<App {...props} />)
+  //   );
+  //   const styleTags = sheet.getStyleElement();
+  //   return { ...page, styleTags };
+  // }
   render() {
     return (
       <html>
@@ -29,6 +31,10 @@ export default class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.7.4/tachyons.min.css"
           />{" "}
+          <link
+            href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+            rel="stylesheet"
+          />
           {this.props.styleTags}
         </Head>
         <body>

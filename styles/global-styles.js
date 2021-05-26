@@ -1,7 +1,9 @@
-import { injectGlobal } from "styled-components";
+// import { injectGlobal } from "styled-components";
 
-injectGlobal`
-  ul {
-    margin: 0;
-    padding: 0;
-  }`;
+// injectGlobal`
+//   ul {
+//     margin: 0;
+//     padding: 0;
+//   }`;
+import "tailwindcss/tailwind.css";
+import "./global.css";
